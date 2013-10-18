@@ -79,7 +79,6 @@
 	_previousNextControl = [[UISegmentedControl alloc] initWithItems:@[
                             NSLocalizedString(@"Previous", @"EZForm Standard Input Accessory view - Previous"),
                             NSLocalizedString(@"Next", @"EZForm Standard Input Accessory view - Next")]];
-	_previousNextControl.segmentedControlStyle = UISegmentedControlStyleBar;
 	_previousNextControl.momentary = YES;
 	[_previousNextControl addTarget:self action:@selector(previousNextAction:) forControlEvents:UIControlEventValueChanged];
 	UIBarButtonItem *previousNextItem = [[UIBarButtonItem alloc] initWithCustomView:self.previousNextControl];
